@@ -9,7 +9,7 @@ class LoginModel extends CI_Model {
         
          if(strcmp($_POST['email'], 'admin@admin.com') == 0)
             if(strcmp($_POST['senha'], 'password') == 0){
-                  redirect('home');
+                redirect(base_url('home'));
                   return 0;
                 
            }
