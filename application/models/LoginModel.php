@@ -12,9 +12,7 @@ class LoginModel extends CI_Model {
          $this->load->library('Login', '', 'acesso');
          $k = $this->acesso->verifica($email, $senha);
 
-         if($k){
-             redirect('home');
-          }
+         if($k) redirect('home');
           else return 1;  
       }  
   }
